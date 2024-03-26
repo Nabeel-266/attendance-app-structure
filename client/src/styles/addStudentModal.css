@@ -1,0 +1,150 @@
+.modalOverlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(30, 30, 30, 0.7);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addStudentModal {
+  width: 600px;
+  background-color: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+/** Profile Modal Header */
+.studentModalHdr {
+  width: 100%;
+  padding: 6px 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #444;
+}
+
+.studentModalHdr h2 {
+  color: #333;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+}
+
+.studentModalHdr .closeModalBtn {
+  all: unset;
+  padding: 4px;
+  position: absolute;
+  left: 10px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 2px;
+  background-color: #0873b9;
+}
+
+/** Profile Modal Middle */
+.studentRegisterForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.studentProfilePicCont {
+  padding: 20px 20px 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilePicImageCont {
+  position: relative;
+  border-radius: 100%;
+}
+
+.profileImage {
+  width: 100px;
+  height: 100px;
+  background-color: #444;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.fileChooseProfilePic {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chooseFileLabel {
+  padding: 6px;
+  border-radius: 100%;
+  background-color: #0873b9;
+  cursor: pointer;
+}
+
+.fileInput {
+  display: none;
+}
+
+.formField {
+  width: 47%;
+}
+
+.formField label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  padding: 0px 6px;
+}
+
+.formField input {
+  width: 100%;
+  padding: 6px;
+  outline: none;
+  font-size: 0.98rem;
+  font-weight: 500;
+  border: 2px solid #888;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: 150ms linear all;
+}
+
+.formField input:focus {
+  border: 2px solid #0873b9;
+}
+
+.formField select {
+  width: 100%;
+  font-size: 0.98rem;
+  font-weight: 500;
+  outline: none;
+  color: #444;
+  padding: 7px 6px;
+  border: 2px solid #888;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: 150ms linear all;
+}
+
+.formField select:focus {
+  border: 2px solid #0873b9;
+}
+
+.formField select option {
+  font-weight: 600;
+}

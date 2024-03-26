@@ -1,0 +1,56 @@
+.loginInputFieldArea {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.loginInputField {
+  width: 100%;
+  padding: 13px 8px 6.5px 8px;
+  outline: none;
+  font-size: 0.98rem;
+  color: #444;
+  font-weight: 600;
+  background-color: transparent;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  transition: 0.2s linear all;
+}
+
+.loginInputField:focus {
+  border: 2px solid #0873b9;
+}
+
+.loginInputLabel {
+  position: absolute;
+  left: 6px;
+  font-size: 0.98rem;
+  font-weight: 700;
+  border-radius: 2px;
+  padding: 0px 6px;
+  color: #444;
+  background-color: #fff;
+  pointer-events: none;
+  transform: translateY(0%);
+  transition: 0.3s ease all;
+}
+
+.eyeIcon {
+  position: absolute;
+  right: 6px;
+  height: 90%;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.loginInputField:focus + .loginInputLabel {
+  transform: translateY(-110%) !important;
+  font-size: 0.85rem !important;
+  color: #0873b9;
+}
